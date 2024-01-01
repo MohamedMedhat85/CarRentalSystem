@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registeration</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+    <section>
+        <div class="register-form-box">
+            <div class="form-value">
+                <form id="registeration-form" action="register.php" method="post">
+                    <h1>Registeration</h1>
+                    <div class="input-box">
+                        <ion-icon name="person-outline"></ion-icon>
+                        <input id="name" type="text" name="name" placeholder="">
+                        <label for="name" id="name-label">Name</label>
+                    </div>
+                    <div class="input-box">
+                        <ion-icon name="mail-outline"></ion-icon>
+                        <input id="email" type="email" name="email" placeholder="">
+                        <label for="email" id="email-label">Email</label>
+                    </div>
+                    <div class="input-box">
+                        <ion-icon name="lock-closed-outline"></ion-icon>
+                        <input id="password" type="password" name="password" placeholder="">
+                        <label for="password" id="password-label">Password</label>
+                    </div>
+                    <div class="input-box">
+                        <ion-icon name="lock-closed-outline"></ion-icon>
+                        <input id="confirm-password" type="password" placeholder="">
+                        <label for="confirm-password" id="confirmpassword-label">Confirm Password</label>
+                    </div>
+                    <button>Register</button>
+                </form>
+                <div class=" login">
+                    <p>Already have an account? <a href="login.html">Login</a> </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        var urlParams2 = new URLSearchParams(window.location.search);
+        var error = urlParams2.get("error");
+        if (error === 'email_exists') {
+            const emailInput = document.getElementById("email");
+            const emailLabel = document.getElementById("email-label");
+            emailInput.placeholder = "This Email has already been used";
+            emailLabel.style.color = 'red';
+
+        }
+        if (error === 'email_invalid') {
+            const emailInput = document.getElementById("email");
+            const emailLabel = document.getElementById("email-label");
+            emailInput.placeholder = "Please use a valid email";
+            emailLabel.style.color = 'red';
+
+        } 
+    </script>
+    <script src="Registeration.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

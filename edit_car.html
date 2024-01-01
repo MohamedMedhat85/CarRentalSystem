@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adding Car</title>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="login.css">
+
+</head>
+
+<body>
+    <section>
+        <div class="register-form-box">
+            <div class="form-value">
+                <form id="edit_form" method="post" action="edit_car.php">
+                    <h1>Edit Car</h1>
+                    <div class="input-box">
+                        <ion-icon name="car-outline"></ion-icon>
+                        <input id="car_model" type="text" name="car_model" placeholder="">
+                        <label for="car_model" id="car_model">Car Model</label>
+                    </div>
+                    <div class="input-box">
+                        <ion-icon name="calendar-outline"></ion-icon>
+                        <input id="year" type="number" name="year" placeholder="">
+                        <label for="year" id="email-label">Year</label>
+                    </div>
+                    <div class="input-box">
+                        <ion-icon name="card-outline"></ion-icon>
+                        <input id="plate_id" type="text" name="plate_id" placeholder="">
+                        <label for="plate_id" id="password_label">Plate ID</label>
+                    </div>
+                    <div class="input-box">
+                        <ion-icon name="images-outline"></ion-icon>
+                        <input id="car_image" type="text" name="car_image" placeholder="">
+                        <label for="car_image" id="car_image">Car Image (url)</label>
+                    </div>
+                    <div class="input-box">
+                        <ion-icon name="images-outline"></ion-icon>
+                        <input id="car_price" type="number" name="car_price" placeholder="">
+                        <label for="car_price" id="car_price">Car Price</label>
+                    </div>
+                    <button id="editButton">Edit</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script src="edit_car.js"></script>
+</body>
+
+</html>

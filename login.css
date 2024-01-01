@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    min-width: 100vh;
+    background-image: url('https://c4.wallpaperflare.com/wallpaper/16/671/726/lionel-messi-football-barcelona-hd-wallpaper-preview.jpg');
+    background-size: cover;
+}
+
+
+
+
+.register-form-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    background-color: transparent;
+    width: 400px;
+    height: 550px;
+}
+
+.login-form-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    background-color: transparent;
+    width: 400px;
+    height: 450px;
+}
+
+h1 {
+    margin-bottom: 40px;
+    text-align: center;
+    color: #DDA0DD;
+}
+
+.input-box {
+    position: relative;
+    margin: 30px;
+    width: 300px;
+    border-bottom: 1px solid #DDA0DD;
+}
+
+.input-box label {
+    position: absolute;
+    bottom: 40px;
+    left: 5px;
+    color: #DDA0DD;
+}
+
+.input-box input {
+    width: 100%;
+    height: 50px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    padding: 0 35px 0 5px;
+}
+
+.input-box ion-icon {
+    position: absolute;
+    bottom: 40px;
+    right: 6px;
+    color: #DDA0DD;
+}
+
+button {
+    position: relative;
+    background-color: #C8A2C8;
+    left: 36px;
+    width: 80%;
+    height: 30px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    font-size: medium;
+    font-weight: bold;
+}
+
+.register,
+.login {
+    text-align: center;
+    margin: 25px 0 10px 0;
+    color: #DDA0DD;
+    font-size: 15px;
+}
+
+.register p a,
+.login p a {
+    text-decoration: none;
+    color: #DDA0DD;
+    font-weight: bold;
+    font-size: medium;
+}
+
+.register p a:hover,
+.login p a:hover {
+    text-decoration: underline;
+    color: rgb(205, 89, 205);
+    font-weight: bold;
+}
+
+.input-box input,
+select,
+textarea {
+    color: #C8A2C8;
+}
+
+button:hover {
+    background-image: linear-gradient(45deg, rgb(0, 0, 255), rgb(247, 0, 255));
+    color: #C8A2C8;
+    transition-duration: 300ms;
+    transform: scale(1.1);
+}
+
+#login {
+    height: 40px;
+}
+
+input::placeholder {
+    font: red;
+    /* Placeholder text color */
+    font-style: italic;
+    /* Placeholder text style */
+    /* You can add more styles as needed */
+}

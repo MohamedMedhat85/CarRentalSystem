@@ -1,0 +1,103 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 0px;
+}
+
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 4px;
+    text-align: center;
+}
+
+th {
+    background: linear-gradient(to right, #52a8e1, #628dba);
+    color: #fff;
+    text-align: center;
+}
+
+td {
+    background-color: #d3d0d0;
+    color: #282525;
+    text-align: center;
+}
+
+img {
+    max-width: 50px;
+    max-height: 25px;
+}
+
+/* Navigation Style */
+nav {
+    background: linear-gradient(to right, #3498db, #2c3e50);
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-section {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-section p {
+    margin: 0;
+    margin-right: 20px;
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5);
+}
+
+.navbar-section a {
+    color: #fff;
+    text-decoration: none;
+    padding: 7px 15px;
+    margin: 0px 20px;
+    border: 2px solid #fff;
+    border-radius: 15px;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.navbar-section a:hover {
+    background-color: #fff;
+    color: #3498db;
+    border-color: #3498db;
+}
+
+button {
+    color: rgb(24, 23, 23);
+    font-size: 13px;
+    background-color: none;
+    text-decoration: underline;
+    padding: 2px 7px;
+    margin: 0px -5px;
+    border: none;
+    background-color: #d3d0d0;
+}
+
+button:hover {
+    background-color: #d3d0d0;
+    color: #3498db;
+    cursor: pointer;
+}
+
+td:last-child {
+    width: 5%;
+    /* Adjust the width as needed */
+}
+
+td:first-child {
+    width: 5%;
+    /* Adjust the width as needed */
+}
+
+.admin_car_table td:last-child {
+    width: 17%;
+}

@@ -1,0 +1,5 @@
+@import url('current_cars.css');
+
+td:last-child {
+    width: 100px;
+}

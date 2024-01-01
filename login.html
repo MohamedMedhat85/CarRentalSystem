@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signing in</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+
+    <section>
+        <div class="login-form-box">
+
+            <div class="form-value">
+                <form id="login-form" action="login.php" method="post">
+                    <h1 id="login">Login</h1>
+                    <div class="input-box">
+                        <ion-icon name="mail-outline"></ion-icon>
+                        <input id="email" name="email" type="email" placeholder="">
+                        <label id="email-label" for="email">Email</label>
+                    </div>
+                    <div class="input-box">
+                        <ion-icon name="lock-closed-outline"></ion-icon>
+                        <input id="password" name="password" type="password" placeholder="">
+                        <label id="password-label" for="password">Password</label>
+                    </div>
+                    <button>Log in</button>
+                </form>
+                <div class="register">
+                    <p>Don't have an account? <a href="Registeration.html">Register</a> </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        var urlParams2 = new URLSearchParams(window.location.search);
+        var error = urlParams2.get("error");
+        if (error === 'wrong-credentials') {
+            const emailInput = document.getElementById("email");
+            const emailLabel = document.getElementById("email-label");
+            emailLabel.style.color = 'red';
+            emailInput.placeholder = "You Entered wrong credentials";
+            const passwordInput = document.getElementById("password");
+            const passwordLabel = document.getElementById("password-label");
+            passwordInput.placeholder = "You Entered wrong credentials";
+            passwordLabel.style.color = 'red';
+        }
+    </script>
+    <script src="login.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
